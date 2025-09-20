@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Search_Box{
+           width: 250px;
+           height: 400px;
+           /* border: 2px solid; */
+           margin-top: 10px;
+           overflow: scroll;
+           align-items: center;
+
+        }
+
+        #Search_Box>div{
+            display: flex;
+            justify-content:space-between;
+            margin-top: 10px;
+            /* border: 2px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 5px;
+            align-items: center;
+        }
+
+       #Search_Box>div>img{
+        width: 30px;
+        height: 30px;
+       }
+
+        input{
+            font-size: 20px;
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Debouncing </h1>
+
+    <br>
+
+    <input oninput="Delay()" type="text" placeholder="Search Movie...">
+
+    <div id="Search_Box"></div>
+</body>
+<script src="./index.js"></script>
+</html>
